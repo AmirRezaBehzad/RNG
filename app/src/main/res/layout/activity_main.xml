@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5EE5F6"
+            app:title="Random number generator"
+            app:titleMarginStart="20dp"
+            app:titleTextColor="@color/white">
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="25dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="215dp"
+            android:textSize="25dp">
+        </TextView>
+
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_rectangle"
+            android:layout_marginTop="120dp"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:layout_marginLeft="25dp">
+        </EditText>
+
+        <EditText
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_rectangle"
+            android:layout_marginTop="120dp"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:layout_marginLeft="215dp">
+        </EditText>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
