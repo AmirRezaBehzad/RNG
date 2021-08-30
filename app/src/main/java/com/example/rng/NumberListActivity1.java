@@ -9,12 +9,9 @@ import android.text.InputType;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import static com.example.rng.R.id.nl_bottom_navigation;
-
-public class MainActivity extends AppCompatActivity {
+public class NumberListActivity1 extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     EditText editText;
@@ -22,13 +19,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_number_list1);
+
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
-        editText = findViewById(R.id.main_edit_text);
+        editText = findViewById(R.id.main_edit_text2);
         editText.setInputType(InputType.TYPE_NULL);
 
-        bottomNavigationView.setSelectedItemId(R.id.rng_bottom_navigation);
+
+        bottomNavigationView.setSelectedItemId(R.id.nl_bottom_navigation);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -36,17 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.rng_bottom_navigation:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.nl_bottom_navigation:
-                        startActivity(new Intent(getApplicationContext(), NumberListActivity1.class));
-                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;
             }
         });
-
 
         getSupportActionBar().hide();
     }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberListActivity1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5EE5F6"
+            app:title="Random number generator"
+            app:titleMarginStart="20dp"
+            app:titleTextColor="@color/white">
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="@drawable/copy_button_rectangle"
+            android:textColor="#5EE5F6"
+            android:layout_marginTop="75dp"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="55dp"
+            android:layout_centerHorizontal="true"
+            android:text="COPY"
+            android:drawableLeft="@drawable/ic_baseline_content_copy_24">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <EditText
+            android:id="@+id/main_edit_text2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="150dp"
+            android:textSize="35dp"
+            android:background="@drawable/edit_text_rectangle2"
+            android:gravity="start">
+        </EditText>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#5EE5F6"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/bottom_navigation_menu">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
