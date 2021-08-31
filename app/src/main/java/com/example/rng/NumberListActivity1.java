@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.InputType;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -15,6 +16,7 @@ public class NumberListActivity1 extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     EditText editText;
+    String temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class NumberListActivity1 extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         editText = findViewById(R.id.main_edit_text2);
         editText.setInputType(InputType.TYPE_NULL);
+
 
 
         bottomNavigationView.setSelectedItemId(R.id.nl_bottom_navigation);

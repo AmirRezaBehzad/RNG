@@ -38,6 +38,7 @@
         </TextView>
 
         <EditText
+            android:id="@+id/from_edittext"
             android:layout_width="165dp"
             android:layout_height="50dp"
             android:background="@drawable/edit_text_rectangle"
@@ -48,6 +49,7 @@
         </EditText>
 
         <EditText
+            android:id="@+id/to_edittext"
             android:layout_width="165dp"
             android:layout_height="50dp"
             android:background="@drawable/edit_text_rectangle"
@@ -70,6 +72,7 @@
         </EditText>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/start_btn"
             android:layout_width="130dp"
             android:layout_height="60dp"
             android:background="@drawable/button_rectangle"
@@ -80,6 +83,7 @@
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reset_btn"
             android:layout_width="130dp"
             android:layout_height="60dp"
             android:background="@drawable/button_rectangle"
