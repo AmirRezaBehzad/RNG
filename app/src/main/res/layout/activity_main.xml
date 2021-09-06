@@ -8,6 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:background="@color/white"
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.MaterialToolbar
@@ -23,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="From"
+            android:textColor="@color/black"
             android:layout_marginTop="80dp"
             android:layout_marginLeft="25dp"
             android:textSize="25dp">
@@ -32,6 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To"
+            android:textColor="@color/black"
             android:layout_marginTop="80dp"
             android:layout_marginLeft="215dp"
             android:textSize="25dp">
@@ -43,6 +46,7 @@
             android:layout_height="50dp"
             android:background="@drawable/edit_text_rectangle"
             android:layout_marginTop="120dp"
+            android:textColor="@color/black"
             android:paddingLeft="10dp"
             android:inputType="number"
             android:layout_marginLeft="25dp">
@@ -52,6 +56,7 @@
             android:id="@+id/to_edittext"
             android:layout_width="165dp"
             android:layout_height="50dp"
+            android:textColor="@color/black"
             android:background="@drawable/edit_text_rectangle"
             android:layout_marginTop="120dp"
             android:paddingLeft="10dp"
